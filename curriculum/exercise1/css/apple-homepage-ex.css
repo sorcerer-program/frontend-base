@@ -1,0 +1,105 @@
+/* header */
+header {
+  background-color: #86868b;
+  border: 1px solid red;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: sticky;
+  z-index: 10;
+}
+/* nav */
+nav.nav-container {
+  border:1px solid blue;
+  background-color: aquamarine;
+  width: 90%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 0px;
+  /* gap: 30px; */
+}
+/* logo */
+
+img.icon {
+  border: 1px solid blueviolet;
+  background-color: aqua;
+  width: 15%;
+  height: auto;
+}
+
+/* menu */
+ul.menu {
+  /* 布局 */
+  border: 1px solid blueviolet;
+  background-color: chocolate;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px 0px; */
+  gap: 30px;
+  /* 细节 */
+  list-style: none;
+  font-size: 12px;
+}
+
+/* 两个大 banner */
+
+
+.banner {
+
+  height: 700px;
+
+
+}
+
+.banner h2 {
+  font-size: 56px;
+  margin-bottom: 1px;
+  margin-top: 50px;
+}
+
+p.subhead {
+  margin-bottom: 16px;
+  font-size: 28px;
+}
+p.callout {
+  margin-bottom: 16px;
+  font-size: 19px;
+  color: #86868b;
+}
+
+/* 四宫格 */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0
+}
+
+.grid-item {
+  background: #fff;
+  height: 480px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  padding: 80px;
+}
+
+/* 页脚 */
+footer {
+  background: #f9fafb;
+  font-size: 13px;
+  margin-top: 20px
+}
+
+.copyright {
+  text-align: center;
+  color: #777;
+  font-size: 12px
+}
+

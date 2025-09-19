@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+.bodyCenter {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: black solid 1px;
+    border-radius: 5px;
+
+    text-align: center;
+
+    background-color: antiquewhite;
+}
+
+.header {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.todo-item {
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 16px;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    background-color: rgb(203, 217, 217);
+    border: 1px solid black;
+    border-radius: 14px;
+    height: 50vh;
+    width: 50vw;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+span {
+    color: #843030;
+
+    font-family: 'Edu NSW ACT Cursive', cursive;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.popup_btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.add {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+
+    background-color: rgb(203, 217, 217);
+    border: 1px solid #0c0b0b;
+    border-radius: 14px;
+    height: 50vh;
+    width: 50vw;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.add-from {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+}
+
+.inputBox {
+    border: 1px solid black;
+    border-radius: 5px;
+
+    background-color: antiquewhite;
+}
+
+.nav-users {
+    display: flex;
+    gap: 20px;
+}
+
+
+button {
+    border: black 3px solid;
+    border-radius: 10px;
+    font-size: 16px;
+
+    color: whitesmoke;
+    background-color: #284928;
+}
+
+button:hover {
+    background-color: #56a5a5;
+}
+label {
+    display: inline-block;
+    width: 100px;   /* 固定宽度 */
+    text-align: right; /* 文本右对齐，更美观 */
+    margin-right: 8px;
+}
