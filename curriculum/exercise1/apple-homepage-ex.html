@@ -15,8 +15,7 @@
       <ul class="menu">
         <!-- logo图标 -->
         <li><img src="./img/logo.svg" alt="logo" class="icon"></li>
-        <!-- <img src="./img/logo.svg" alt="logo" class="icon"> -->
-        <!-- 菜单 -->
+        <!-- 文字菜单 -->
         <li><a href="#">Store</a></li>
         <li><a href="#">Mac</a></li>
         <li><a href="#">iPad</a></li>
@@ -29,41 +28,58 @@
         <li><a href="#">Accessories</a></li>
         <li><a href="#">Support</a></li>
         <!-- search图标 -->
-        <!-- <img src="./img/search.svg" alt="search" class="icon">
-        <img src="./img/buy.svg" alt="buy" class="icon"> -->
+        <li><img src="./img/search.svg" alt="logo" class="icon"></li>
+        <!-- 购物车图标 -->
+        <li><img src="./img/buy.svg" alt="logo" class="icon"></li>
       </ul>
-    </nav>
-    <!-- <div>
-      hhhh
-    </div> -->
-    <!-- <div>
-      <p>Last chance to get AirPods or an eligible accessory of your choice when you buy Mac or iPad with education savings. Ends 9.30.1 Shop</p>
-    </div> -->
-  </header>
-
-  <main>
-    <!-- 两个大 banner -->
-    <section class="banners wrap">
-      <div class="banner banner1" >
-        <h2>iPhone 17 Pro</h2>
-        <p class="subhead">All out Pro.</p>
-        <p class="callout">Available starting 9.19</p>
-        <div>
-          <a class="button button-primary" href="#">Learn more</a>
-          <a class="button button-second" href="#">Pre-order</a>
-        </div>
+      <div class="edu-promo">
+        Last chance to get AirPods or an eligible accessory of your choice 
+        when you buy Mac or iPad with education savings. Ends 9.30
+        <sup><a href="https://www.apple.com/#footnote-1">1</a></sup>.
+        <a href="https://www.apple.com/shop" class="edu-shop">Shop></a>
       </div>
-      <div class="banner banner2" >
-        <h2>iPhone Air</h2>
-        <p class="subhead">The thinnest iPhone ever. </p>
-        <p class="callout"></p>
-        <div>
-          <a class="button button-primary" href="#">Learn more</a>
-          <a class="button button-second" href="#">Pre-order</a>
+    </nav>
+  </header>
+  <main>
+    <!-- 三个大 banner -->
+    <section class="banners">
+      <div class="banner" onclick="location.href='https://www.apple.com/iphone-17-pro/'">
+        <div class="banner-content iPhon17Pro">
+          <h2>iPhone 17 Pro</h2>
+          <p class="subhead">All out Pro.</p>
+          <div class="button-group">
+            <a class="button button-primary" href="#">Learn more</a>
+            <a class="button button-second" href="#">Buy</a>
+          </div>
         </div>
+        <div class="banner-gap"></div>
+      </div> 
+      <div class="banner" onclick="location.href='https://www.apple.com/iphone-air/'">
+        <div class="banner-content iPhonAir">
+          <h2>iPhone Air</h2>
+          <p class="subhead">The thinnest iPhone ever. </p>
+          <div class="button-group">
+            <a class="button button-primary" href="#">Learn more</a>
+            <a class="button button-second" href="#">Buy</a>
+          </div>
+          <div class="banner-gap"></div>
+        </div>
+        <div class="banner-gap"></div>
+      </div>
+
+      <div class="banner" onclick="location.href='https://www.apple.com/iphone-17/'">
+        <div class="banner-content iPhon17" >
+          <h2>iPhone 17</h2>
+          <P class="subhead">Magichromatic</P>
+          <div class="button-group">
+            <a class="button button-primary" href="#">Learn more</a>
+            <a class="button button-second" href="#">Buy</a>
+          </div>
+          <div class="banner-gap"></div>
+        </div>
+        <div class="banner-gap"></div>
       </div>
     </section>
-
     <!-- 四宫格 -->
     <section class="grid">
       <div class="grid-item grid1">

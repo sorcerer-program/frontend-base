@@ -1,64 +1,97 @@
-/* header */
+
+/**************************************** header ********************************************/
+
 header {
   background-color: #86868b;
   border: 1px solid red;
   width: 100%;
-  height: 80px;
+  height: auto;
   display: flex;
   align-content: center;
   justify-content: center;
   position: sticky;
+  top: 0;
   z-index: 10;
 }
 /* nav */
 nav.nav-container {
   border:1px solid blue;
   background-color: aquamarine;
-  width: 90%;
-  height: 50%;
   display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
   align-items: center;
-  justify-content: center;
-  padding: 6px 0px;
-  /* gap: 30px; */
+  justify-items: center;
 }
 /* logo */
-
 img.icon {
   border: 1px solid blueviolet;
   background-color: aqua;
-  width: 15%;
-  height: auto;
+  display: block;
+  height: 22px;
+  width: auto;
 }
-
 /* menu */
 ul.menu {
-  /* 布局 */
   border: 1px solid blueviolet;
   background-color: chocolate;
   width: 90%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 10px 0px; */
-  gap: 30px;
-  /* 细节 */
+  gap: 35px;
+  
   list-style: none;
   font-size: 12px;
+  padding: 10px 0;
+}
+div.edu-promo {
+  display: flex;
+  border: 1px solid green;
+  background-color: bisque;
+  height: 50%;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  padding: 12px 0;
+}
+a.edu-shop {
+  text-decoration: none;
+  color: rgb(0, 102, 204);
 }
 
-/* 两个大 banner */
 
-
-.banner {
-
+/************************************** 三个大 banner ******************************************/
+div.banner {
+  border: 1px solid blue;
+  cursor: pointer;
   height: 700px;
-
-
+}
+div.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 98%;
+}
+div.iPhon17Pro {
+  color: white;
+  background: url(../img/hero_iphone_17_pro__bknyzxfk2agi_mediumtall_2x.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+div.iPhonAir{
+  color: black;
+  background: url(../img/hero_iphone_air__0gxyavihpiqu_mediumtall_2x.jpg);
+  background-size: 100% 100%;
+}
+div.iPhon17 {
+  color: black;
+  background: url(../img/hero_iphone_17__c5vvimu9a20y_mediumtall_2x.jpg);
+  background-size: 100% 100%;
 }
 
-.banner h2 {
+div.banner h2 {
   font-size: 56px;
   margin-bottom: 1px;
   margin-top: 50px;
@@ -68,11 +101,58 @@ p.subhead {
   margin-bottom: 16px;
   font-size: 28px;
 }
-p.callout {
+
+div.button-group {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+}
+
+a.button {
+  border-radius: 28px;
+  padding: 14px 20px;
+  font-weight: bold;
+}
+a.button-primary {
+  border: 1px solid #0071e3;
+  background-color: #0071e3;
+  color: white;
+  transition: all 0.3s ease;
+}
+a.button-primary:hover {
+  background-color: #2997ff;
+}
+a.button-second {
+  border: 1px solid #0071e3;
+  color: #0071e3;
+  transition: all 0.3s ease;
+}
+a.button-second:hover {
+  background-color: #2997ff;
+  color: white;
+}
+
+div.banner-gap {
+  height: 2%;
+  background-color: red;
+}
+/* div.button { */
+  /* display: inline-block;  */
+  /* border: 1px solid #86868b; */
+  /* border-radius: 28px;
+  padding: 13px 20px;  
+  font-size: 18px;
+  font-weight: bold;
+  gap: 40px; */
+/* } */
+
+/* p.callout {
   margin-bottom: 16px;
   font-size: 19px;
   color: #86868b;
-}
+} */
 
 /* 四宫格 */
 .grid {
