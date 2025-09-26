@@ -101,9 +101,10 @@ pictureBox.addEventListener("transitionend", () => {
 function updateDots() {
   dots.forEach(dot => dot.classList.remove("active"));
   // index 对应当前显示的真实图片（排除克隆）
-  dots[index - 1].classList.add("active");
+  if (index >= 1 && index <= dots.length) {
+    dots[index - 1].classList.add("active");
+  }
 }
-let isPaused = false;
 dots.forEach( (dot, i) => {
     dot.addEventListener("click", () => {
         console.log("click")

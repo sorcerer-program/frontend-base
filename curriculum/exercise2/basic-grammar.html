@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS BASIC GRAMMAR</title>
+</head>
+<body>
+    <h1>js basic grammer exercise</h1>
+    
+    <script>
+        console.log("Hello JS !")
+        // 变量和常量
+        const PI = 3.1415926
+        console.log("PI = ", PI)
+        let age = 18
+        console.log("age = ", age)
+        age = 20
+        console.log("new age = ", age)
+        // 数据类型
+        numNumber = 100
+        numString = "100"
+        console.log("numNumber == numString ?", numNumber == numString)
+        console.log("numNumber === numString ?", numNumber === numString)
+        let web = "    www.cqut.edu.cn    "
+        let a = web.includes("cqut")
+        console.log("a = ", a)
+        let b = web.trim()
+        console.log("b = ", b)
+        let c = b.split(".")
+        console.log("c = ", c)
+        c.forEach((item, index) => {
+            console.log(`c[${index}] = ${item}`)
+        })
+
+        const boy = {
+            name: "张三",
+            age: 20,
+            score: 90,
+            say(content) {
+                console.log(`${this.name} 说: ${content}`)
+            }
+        }
+        boy.say(`大家好，我叫做${boy.name}。`)
+
+        let girl = new Map(
+            [
+                ["name", "李四"],
+                ["age", 18],
+                ["score", 95],
+                ["say", function(content) {
+                    console.log(`${this.get("name")} 说: ${content}，我叫做${this.get("name")}。`)
+                }]
+            ]
+        )
+        girl.get("say").call(girl, "大家好")
+        girl.set("age", 20)
+        console.log(`girl new age = ${girl.get("age")}`)
+        girl.delete("score")
+        console.log(girl)
+        girl.set("score", 98)
+        console.log(girl)
+        girl.forEach((value, key) => {
+            console.log(`girl ${key} = ${value}`)
+        })
+    </script>
+</body>
+</html>

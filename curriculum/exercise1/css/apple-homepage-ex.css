@@ -251,9 +251,10 @@ div.dots {
 }
 
 div.dot {
+  display: inline-block;
   width: 8px;
   height: 8px;
-  background: #ccc;
+  background: #666;
   border-radius: 50%;
   transition: background 0.3s ease;
   cursor: pointer;
